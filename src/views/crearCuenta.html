@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resource/img/Icon-SaleCraft.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/cCuenta.css">
+    <title>Salecraft</title>
+</head>
+<body>
+ <header>
+    <div class="Marca">
+        <img src="../resource/img/Icon-SaleCraft.png" alt="icon">
+        <h1>SALECRAFT</h1>
+    </div>
+ </header>
+    <div class="container">
+        <h2>Crear Cuenta</h2>
+        <p class="align-right">(*) Campos obligatorios</p>
+        <form id="myForm" method="POST">
+            <div class="input-group">
+                <label for="username"><span>*</span>Nombre de usuario:</label>
+                <input type="text" name="username" id="username" placeholder="Nombre de usuario" required>
+                <div class="error-message" id="usernameError"></div>
+
+            </div>
+    
+            <div class="name-row">
+                <div class="input-group">
+                    <label for="firstname"><span>*</span>Primer Nombre:</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Primer Nombre" required>
+                    <div class="error-message" id="firstnameError"></div>
+                </div>
+                <div class="input-group">
+                    <label for="secondname">Segundo Nombre:</label>
+                    <input type="text" name="secondname" id="secondname" placeholder="Segundo Nombre">
+                    <div class="error-message" id="secondnameError"></div>
+                </div>
+            </div>
+    
+            <div class="lastname-row">
+                <div class="input-group">
+                    <label for="firstsurname"><span>*</span>Primer Apellido:</label>
+                    <input type="text" name="firstsurname" id="firstsurname" placeholder="Primer Apellido" required>
+                    <div class="error-message" id="firstsurnameError"></div>
+                </div>
+                <div class="input-group">
+                    <label for="secondsurname"><span>*</span>Segundo Apellido:</label>
+                    <input type="text" name="secondsurname" id="secondsurname" placeholder="Segundo Apellido" required>
+                    <div class="error-message" id="secondsurnameError"></div>
+                </div>
+            </div>
+    
+            <div class="id-group">
+                <div class="input-group">
+                    <label for="documentNumber"><span>*</span>Número de Identificación:</label>
+                    <input type="number" name="documentNumber" id="documentNumber" placeholder="Número de Identificación" required>
+                    <div class="error-message" id="documentNumberError"></div>
+                </div>
+                <div class="input-group">
+                    <label for="documentType"><span>*</span>Tipo de ID:</label>
+                    <select id="documentType" name="documentType" required>
+                        <option value="CC">Cédula de Ciudadanía</option>
+                        <option value="TI">Tarjeta de Identidad</option>
+                        <option value="CS">Cédula Extranjera</option>
+                        <option value="PS">Pasaporte</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <label for="email"><span>*</span>Correo electrónico</label>
+                <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+                <div class="error-message" id="emailError"></div>
+            </div>
+            
+            <div class="input-group">
+                <label for="password"><span>*</span>Contraseña:</label>
+                <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                <div class="password-strength" id="passwordStrength"></div> 
+                <div class="error-message" id="passwordError"></div>
+            </div>
+            
+
+            <div class="input-group">
+                <label for="confirmPassword"><span>*</span>Validar contraseña:</label>
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Validar Contraseña" required>
+            <div class="error-message" id="confirmPasswordError"></div>
+            </div>
+            
+    
+            <button type="submit" class="btn btn-Crear">Crear</button>
+        </form>
+        <a href="/">Ya tengo cuenta</a>
+    </div>
+
+    
+
+    <script src="/validation.js"></script>
+
+</body>
+</html>

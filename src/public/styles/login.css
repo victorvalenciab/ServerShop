@@ -1,0 +1,140 @@
+:root {
+    --background: #ffff;
+    --color-blanco: #ffff;
+    --background-separador: #C9E046;
+    --color-btn: #085ec5;
+    --color-a: #085ec5;
+    --Negro:#000000;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    background-color: var(--background);
+    
+}
+
+.form-box {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--Negro);
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 40px 10px 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s ease all;
+}
+
+.input-box span {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #888;
+    transition: 0.3s ease all;
+    pointer-events: none;
+}
+
+.input-box input:focus ~ label,
+.input-box input:not(:placeholder-shown) ~ label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #4a90e2;
+    background-color: #ffffff;
+    padding: 0 5px;
+}
+
+.input-box input:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+.remenber-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.remenber-forgot label {
+    color: #333;
+    font-size: 14px;
+}
+
+.remenber-forgot a {
+    color: var(--color-a);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    background-color: var(--color-btn);
+    color: var(--color-blanco);
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease background-color;
+}
+
+.btn:hover {
+    background-color: #3570b8;
+}
+
+.Registrase {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Registrase a {
+    color: var(--color-a);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.checkbox {
+    cursor: pointer;
+}
+
+.mensage-error {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: 5px;
+}

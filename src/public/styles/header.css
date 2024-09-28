@@ -1,0 +1,52 @@
+:root {
+    --color-blanco: #ffff;
+}
+
+header {
+    background-image: url('../resource/img/backgroud-night.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+}
+
+.Marca {
+    display: flex;
+    align-items: center;
+}
+
+.Marca .navegation {
+    padding-left: 650px;
+    justify-content: space-between;
+
+}
+
+.Marca img {
+    margin-right: 10px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.Marca h1 {
+    margin: 0;
+    font-size: 45px;
+    color: var(--color-blanco);
+
+}
+
+
+.Marca a {
+    text-decoration: none;
+    padding: 8px 12px;
+    margin-left: 10px;
+    color: var(--color-blanco);
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+.link {
+    cursor: pointer;
+}
