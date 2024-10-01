@@ -10,7 +10,7 @@ document.getElementById('myForm').addEventListener('submit', async function(even
     let firstsurname = document.getElementById('firstsurname').value;
     let secondsurname = document.getElementById('secondsurname').value;
     let documentNumber = document.getElementById('documentNumber').value;
-    let documentType = document.getElementById('documentNumber').value;
+    let documentType = document.getElementById('documentType').value;
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
     let confirmPassword = document.getElementById('confirmPassword').value;
