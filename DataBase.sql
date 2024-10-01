@@ -22,4 +22,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`username`, `firstname`, `secondname`, `firstsurname`, `secondsurname`, `documentNumber`, `documentType`, `email`, `password`)
 VALUES ('El duque', 'Juan', 'Pedro', 'De', 'Duque', '1010101010', 'CC', 'v@gmail.com', 'ElDuque@12pro-');
 
+INSERT INTO `users` (`username`, `firstname`, `secondname`, `firstsurname`, `secondsurname`, `documentNumber`, `documentType`, `email`, `password`)
+VALUES ('TACO', 'Juan', 'Pedro', 'De', 'Duque', '1010101001', 'CC', 'v1@gmail.com', 'ElDuque@12pro-');
+
 DROP TABLE users;
