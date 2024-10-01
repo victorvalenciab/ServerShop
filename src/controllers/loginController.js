@@ -1,5 +1,5 @@
 const path = require('path');
-// const UserService = require('../services/userService');
+const UserService = require('../services/userService');
 
 
 

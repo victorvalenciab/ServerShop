@@ -32,10 +32,10 @@ document.getElementById('myForm').addEventListener('submit', async function(even
         isValid = false;
     }
 
-    if (!validatePassword(password)) {
-        showError('passwordError', 'La contraseña debe tener al menos 8 caracteres, incluyendo una mayúscula, un número y un carácter especial permitido.');
-        isValid = false;
-    }
+    // if (!validatePassword(password)) {
+    //     showError('passwordError', 'La contraseña debe tener al menos 8 caracteres, incluyendo una mayúscula, un número y un carácter especial permitido.');
+    //     isValid = false;
+    // }
 
     if (password !== confirmPassword) {
         showError('confirmPasswordError', 'Las contraseñas no coinciden.');
