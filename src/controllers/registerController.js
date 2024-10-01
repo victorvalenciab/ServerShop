@@ -4,7 +4,7 @@ const UserService = require('../services/userService');
 class RegisterController {
     // Renderizar la página de registro
     getRegisterPage(req, res) {
-        res.sendFile(path.join(__dirname, '../views/crearCuenta.html'));
+        res.sendFile(path.join(__dirname, '../views/register.html'));
     }
 
     // Manejar el registro de usuarios

@@ -10,6 +10,7 @@ document.getElementById('myForm').addEventListener('submit', async function(even
     let firstsurname = document.getElementById('firstsurname').value;
     let secondsurname = document.getElementById('secondsurname').value;
     let documentNumber = document.getElementById('documentNumber').value;
+    let documentType = document.getElementById('documentNumber').value;
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
     let confirmPassword = document.getElementById('confirmPassword').value;
@@ -28,14 +29,14 @@ document.getElementById('myForm').addEventListener('submit', async function(even
 
     if (!validateDocumentNumber(documentNumber)) {
         showError('documentNumberError', 'El número de documento debe ser estrictamente un número.');
-        alert("El número de documento debe ser estrictamente un número");
+        alert('documentNumberError', 'El número de documento debe ser estrictamente un número.');
         isValid = false;
     }
 
-    // if (!validatePassword(password)) {
-    //     showError('passwordError', 'La contraseña debe tener al menos 8 caracteres, incluyendo una mayúscula, un número y un carácter especial permitido.');
-    //     isValid = false;
-    // }
+    if (!validatePassword(password)) {
+        showError('passwordError', 'La contraseña debe tener al menos 8 caracteres, incluyendo una mayúscula, un número y un carácter especial permitido.');
+        isValid = false;
+    }
 
     if (password !== confirmPassword) {
         showError('confirmPasswordError', 'Las contraseñas no coinciden.');

@@ -4,8 +4,11 @@ const indexControllerndex = require('../controllers/indexController');
 const loginController = require('../controllers/loginController');
 const registerController = require('../controllers/registerController');
 
+
 router.get('/', indexControllerndex.getIndexPage);
 router.get('/login', loginController.getLoginPage);
 router.get('/register', registerController.getRegisterPage);
+router.get('/login', loginController.login);
+router.get('/register', registerController.register);
 
 module.exports = router;
