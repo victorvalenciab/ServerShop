@@ -1,0 +1,39 @@
+:root {
+    --background: #ffff;
+    --color-blanco: #ffff;
+    --background-separador: #C9E046;
+    --color-btn: #085ec5;
+    --color-a: #085ec5;
+    --Negro:#000000;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    border: 2px solid var(--Negro);
+}
+
+.info-card {
+    border: 2px solid var(--Negro);
+    margin: 0;
+    padding: 20px;
+}
+
+.shop-card {
+    border: 2px solid var(--Negro);
+    margin: 0;
+    padding: 20px;
+}

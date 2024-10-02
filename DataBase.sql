@@ -16,13 +16,26 @@ CREATE TABLE `users` (
     PRIMARY KEY(id)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+CREATE TABLE `servers` (
+    `id` int AUTO_INCREMENT NOT NULL,
+    `rango` VARCHAR(50) NOT NULL,
+    `name` VARCHAR(50) NOT NULL UNIQUE,
+    `prace` int NOT NULL,
+    PRIMARY KEY(id)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 -- INSERT DATOS
 
+-- users
 
-INSERT INTO `users` (`username`, `firstname`, `secondname`, `firstsurname`, `secondsurname`, `documentNumber`, `documentType`, `email`, `password`)
+/* INSERT INTO `users` (`username`, `firstname`, `secondname`, `firstsurname`, `secondsurname`, `documentNumber`, `documentType`, `email`, `password`)
 VALUES ('El duque', 'Juan', 'Pedro', 'De', 'Duque', '1010101010', 'CC', 'v@gmail.com', 'ElDuque@12pro-');
 
 INSERT INTO `users` (`username`, `firstname`, `secondname`, `firstsurname`, `secondsurname`, `documentNumber`, `documentType`, `email`, `password`)
-VALUES ('TACO', 'Juan', 'Pedro', 'De', 'Duque', '1010101001', 'CC', 'v1@gmail.com', 'ElDuque@12pro-');
+VALUES ('TACO', 'Juan', 'Pedro', 'De', 'Duque', '1010101001', 'CC', 'v1@gmail.com', 'ElDuque@12pro-'); */
 
-DROP TABLE users;
+/* DROP TABLE users; */
+
+-- servers 
+
+INSERT INTO `servers` (`rango`, `name`, `prace`) VALUES ('Pasive', 'Axolotl', '1500000')

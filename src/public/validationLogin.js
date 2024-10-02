@@ -32,9 +32,11 @@ document.getElementById('myForm').addEventListener('submit', async function(even
             alert('Ocurrió un error al loggear el usuario.');
         }
 });
+
 function clearErrors() {
     let errorMessages = document.querySelectorAll('.error-message');
     errorMessages.forEach(function(el) {
         el.innerText = '';
     });
 }
+

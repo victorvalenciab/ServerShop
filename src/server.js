@@ -15,6 +15,7 @@ app.use(express.json())
 // Usar las rutas
 app.use('/', routes);
 
+
 // Iniciar el servidor
 app.listen(port, () => {
   console.log(`Servidor corriendo en http://localhost:${port}`);
