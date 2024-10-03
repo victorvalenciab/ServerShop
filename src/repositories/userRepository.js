@@ -33,7 +33,18 @@ class UserRepository {
             return rows.length > 0 ? rows[0] : null;
 
         }
-    
+
+    //     // Método para obtener todos los servidores
+    // async findAllServers() {
+    //     const [rows] = await promisePool.query('SELECT * FROM servers');
+    //     return rows;
+    // }
+
+    // // Método para obtener un servidor por su ID
+    // async findByServerId(id) {
+    //     const [rows] = await promisePool.query('SELECT * FROM servers WHERE id = ?', [id]);
+    //     return rows.length > 0 ? rows[0] : null;
+    // }
     
     async createUser(user) {
         const { username, firstname, secondname, firstsurname, secondsurname, documentNumber, documentType, email, password } = user;
